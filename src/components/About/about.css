@@ -1,0 +1,47 @@
+.about {
+  color: #fff;
+  background: linear-gradient(
+    to right,
+    rgba(0, 150, 219, 0.8),
+    rgba(0, 150, 219, 0.8)
+  );
+  background-position: center;
+  height: 100vh;
+  min-height: 80rem;
+  max-height: 120rem;
+  position: relative;
+}
+.home-hero-content {
+  padding: 10px 10px;
+}
+.heading-primary {
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.hero-info {
+  margin: 3rem auto 0 auto;
+  max-width: 60rem;
+  letter-spacing: 3px;
+  font-size: 2rem;
+}
+
+.button-about {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.button-primary {
+  padding: 1.5rem 8rem;
+  background: #fff;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+  text-decoration: none;
+}
