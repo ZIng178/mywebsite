@@ -6,9 +6,9 @@
     rgba(0, 150, 219, 0.8)
   );
   background-position: center;
-  height: 100vh;
+  height: 90vh;
   min-height: 80rem;
-  max-height: 120rem;
+  max-height: 100rem;
   position: relative;
 }
 .home-hero-content {
