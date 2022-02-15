@@ -19,6 +19,18 @@ const About = () => {
           Projects
         </a>
       </div>
+      <div className="hero-socials">
+        <div className="socials">
+          <a href="https://www.linkedin.com/in/wangdi-tenzing/">
+            <img src="https://img.icons8.com/fluency/48/000000/linkedin.png" />
+          </a>
+        </div>
+        <div className="socials">
+          <a href="https://github.com/ZIng178">
+            <img src="https://img.icons8.com/material-rounded/48/000000/github.png" />
+          </a>
+        </div>
+      </div>
     </section>
   );
 };

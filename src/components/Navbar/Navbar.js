@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="header">
       <div className="header-content">
         <div className="left-nav">
           <span> WANGDI TENZING</span>

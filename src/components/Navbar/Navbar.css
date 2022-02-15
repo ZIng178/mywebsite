@@ -1,8 +1,15 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
 .header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 5rem;
+  padding: 0.5rem 3rem;
+  background: #fff;
 }
 .left-nav {
   font-size: 16px;
