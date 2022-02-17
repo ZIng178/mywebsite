@@ -1,29 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./contact.css";
 import Fade from "react-awesome-reveal";
-import * as emailjs from "@emailjs/browser";
-
-const sendEmail = (e) => {
-  e.preventDefault();
-
-  emailjs
-    .sendForm(
-      "gmail",
-      "template_nu8jlgo",
-      e.target,
-      "user_VQxSK2bKADQfmI3sBolwHD"
-    )
-    .then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
-};
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_4r3g7rb",
+        "template_nu8jlgo",
+        e.target,
+        "user_VQxSK2bKADQfmI3sBolwH"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    alert("email is sent ");
+    e.target.reset();
+  };
   return (
     <>
       <Fade delay={500}>
