@@ -67,3 +67,9 @@
 .messagebox {
   padding: 4rem;
 }
+
+.submit-button {
+  background: rgba(0, 150, 219, 0.8);
+  height: 40px;
+  border-radius: 5px;
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -6,36 +7,67 @@ const Navbar = () => {
     <div className="header">
       <div className="header-content">
         <div className="left-nav">
-          <span> WANGDI TENZING</span>
+          <Link to="about">
+            <span> WANGDI TENZING</span>
+          </Link>
         </div>
         <div className="right-nav">
           <ul className="navLinks">
             <li className="header-link-wrapper">
-              <a href="/" className="header-link">
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={300}
+                className="header-link"
+              >
                 {" "}
                 HOME
-              </a>
+              </Link>
             </li>
             <li className="header-link-wrapper">
-              <a href="/about" className="header-link">
+              <Link
+                to="about-me"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={300}
+                className="header-link"
+              >
                 {" "}
                 ABOUT{" "}
-              </a>
+              </Link>
             </li>
             <li className="header-link-wrapper">
-              <a href="/projects" className="header-link">
+              <Link
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={300}
+                className="header-link"
+              >
                 {" "}
                 PROJECTS
-              </a>
+              </Link>
             </li>
             <li className="header-link-wrapper">
-              <a href="/contact" className="header-link">
+              <Link
+                to="contacts"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={300}
+                className="header-link"
+              >
                 {" "}
                 CONTACT
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
+        <div className="mobile-Icon">x</div>
       </div>
     </div>
   );

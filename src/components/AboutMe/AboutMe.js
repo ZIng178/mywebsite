@@ -1,11 +1,11 @@
 import React from "react";
 import "./aboutme.css";
-
+import { Link } from "react-scroll";
 const AboutMe = () => {
   return (
     <div>
       <section id="about-me">
-        <div className="main-conatiner">
+        <div className="main-conatiner-about">
           <h2 className="about-heading">
             <span className="heading-main"> ABOUT ME</span>
             <span className="heading-sub">
@@ -43,10 +43,10 @@ const AboutMe = () => {
                 <strong> contact </strong> me
               </p>
             </div>
-            <a href="/contact" class="contact-button">
+            <Link to="contacts" class="contact-button">
               {" "}
               Contact
-            </a>
+            </Link>
           </div>
           <div className="about-content-skills">
             <h3 className="about-content-title">My Skills</h3>
@@ -55,6 +55,8 @@ const AboutMe = () => {
               <div className="skill">CSS</div>
               <div className="skill">JavaScript</div>
               <div className="skill">React</div>
+              <div className="skill">Redux</div>
+
               <div className="skill">MongoDB</div>
               <div className="skill">Node</div>
               <div className="skill">PostgreSQL</div>
