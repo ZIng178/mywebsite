@@ -1,5 +1,6 @@
 import React from "react";
 import "./about.css";
+import { Link } from "react-scroll";
 
 const About = () => {
   return (
@@ -15,9 +16,9 @@ const About = () => {
         </p>
       </div>
       <div className="button-about">
-        <a href="/projects" className="button-primary">
+        <Link to="projects" className="button-primary">
           Projects
-        </a>
+        </Link>
       </div>
       <div className="hero-socials">
         <div className="socials">

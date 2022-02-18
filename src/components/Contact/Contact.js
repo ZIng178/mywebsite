@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./contact.css";
-import Fade from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
@@ -28,7 +28,7 @@ const Contact = () => {
   };
   return (
     <>
-      <Fade delay={500}>
+      <Zoom>
         <div className="contacts">
           <h1 classNane="contactHeading">Contact</h1>
           <h3>
@@ -55,11 +55,11 @@ const Contact = () => {
                   name="message"
                 ></input>
               </label>
-              <button> Submit</button>
+              <button className="submit-button"> Submit</button>
             </form>
           </div>
         </div>
-      </Fade>
+      </Zoom>
     </>
   );
 };

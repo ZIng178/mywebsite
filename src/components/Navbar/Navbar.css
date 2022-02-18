@@ -24,6 +24,7 @@
 }
 .navLinks {
   display: flex;
+  cursor: pointer;
 }
 .right-nav {
   display: flex;
@@ -47,4 +48,24 @@
 
 .header-link-wrapper a:hover {
   color: rgba(0, 150, 219, 0.8);
+}
+
+.mobile-Icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-Icon {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .navLinks {
+    display: none;
+  }
 }
