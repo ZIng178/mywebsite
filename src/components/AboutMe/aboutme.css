@@ -109,3 +109,38 @@
   position: relative;
   bottom: 170px;
 }
+
+@media screen and (max-width: 768px) {
+  .about-me {
+    padding: 10px;
+    border: 1px solid red;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-content-details-para {
+    text-align: center;
+  }
+
+  .about-content-main {
+    padding: 10px;
+    padding-right: 10px;
+    margin-right: 70px;
+  }
+
+  .about-content-title {
+    position: relative;
+    left: 3px;
+  }
+
+  .contact-button {
+    position: relative;
+    left: 5px;
+  }
+  .skills {
+    margin-left: 10px;
+  }
+}

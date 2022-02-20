@@ -32,6 +32,7 @@ const About = () => {
           </a>
         </div>
       </div>
+      <div class="mouse"></div>
     </section>
   );
 };

@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./Navbar.css";
+import "../Contact/Contact";
+import Sidebar from "../Sidebar/Sidebar";
 
 const Navbar = () => {
+  const [showSideBar, setShowSideBar] = useState(false);
   return (
     <div className="header">
       <div className="header-content">
@@ -66,8 +69,11 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+          {console.log(showSideBar)}
         </div>
-        <div className="mobile-Icon">x</div>
+        <div className="mobile-Icon" onClick={() => setShowSideBar(true)}>
+          x{showSideBar ? <Sidebar /> : null}
+        </div>
       </div>
     </div>
   );

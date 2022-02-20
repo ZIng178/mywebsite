@@ -46,8 +46,12 @@
   transition: color 0.3s;
 }
 
+.header-link-wrapper a:active {
+  border-bottom: 3px solid rgba(0, 150, 219, 0.8);
+}
 .header-link-wrapper a:hover {
   color: rgba(0, 150, 219, 0.8);
+  border-bottom: 3px solid rgba(0, 150, 219, 0.8);
 }
 
 .mobile-Icon {

@@ -43,7 +43,7 @@ const AboutMe = () => {
                 <strong> contact </strong> me
               </p>
             </div>
-            <Link to="contacts" class="contact-button">
+            <Link to="contacts" className="contact-button">
               {" "}
               Contact
             </Link>
