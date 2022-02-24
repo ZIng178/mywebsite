@@ -3,9 +3,15 @@ import { Link } from "react-scroll";
 import "./Navbar.css";
 import "../Contact/Contact";
 import Sidebar from "../Sidebar/Sidebar";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   const [showSideBar, setShowSideBar] = useState(false);
+
+  const toggle = () => {
+    setShowSideBar(!showSideBar);
+  };
+
   return (
     <div className="header">
       <div className="header-content">
@@ -14,8 +20,8 @@ const Navbar = () => {
             <span> WANGDI TENZING</span>
           </Link>
         </div>
-        <div className="right-nav">
-          <ul className="navLinks">
+        <div className="right-nav" onClick={toggle}>
+          <ul className={!showSideBar ? "navLinks " : "mobile-Icon"}>
             <li className="header-link-wrapper">
               <Link
                 to="about"
@@ -24,6 +30,7 @@ const Navbar = () => {
                 offset={50}
                 duration={300}
                 className="header-link"
+                onClick={toggle}
               >
                 {" "}
                 HOME
@@ -37,6 +44,7 @@ const Navbar = () => {
                 offset={50}
                 duration={300}
                 className="header-link"
+                onClick={toggle}
               >
                 {" "}
                 ABOUT{" "}
@@ -50,6 +58,7 @@ const Navbar = () => {
                 offset={50}
                 duration={300}
                 className="header-link"
+                onClick={toggle}
               >
                 {" "}
                 PROJECTS
@@ -63,6 +72,7 @@ const Navbar = () => {
                 offset={50}
                 duration={300}
                 className="header-link"
+                onClick={toggle}
               >
                 {" "}
                 CONTACT
@@ -71,8 +81,8 @@ const Navbar = () => {
           </ul>
           {console.log(showSideBar)}
         </div>
-        <div className="mobile-Icon" onClick={() => setShowSideBar(true)}>
-          x{showSideBar ? <Sidebar /> : null}
+        <div className="mobile-Icon" onClick={toggle}>
+          <GiHamburgerMenu />
         </div>
       </div>
     </div>
