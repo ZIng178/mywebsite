@@ -38,6 +38,10 @@
   margin-left: 60px;
 }
 
+.video {
+  width: 100%;
+}
+
 .projects-row {
   display: grid;
   grid-template-columns: 1.5fr 1fr;

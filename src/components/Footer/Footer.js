@@ -22,7 +22,10 @@ const Footer = () => {
             <img src="https://img.icons8.com/material-rounded/48/000000/github.png" />
           </a>
         </div>
-        <span> © Copyright 2022. Made by Wangdi Tenzing </span>
+        <span className="copyright">
+          {" "}
+          © Copyright 2022. Made by Wangdi Tenzing{" "}
+        </span>
       </div>
     </>
   );

@@ -55,7 +55,7 @@
   font-size: 2.8rem;
   margin-bottom: 3rem;
   position: relative;
-  right: 50px;
+  right: 110px;
 }
 
 .about-content-details {
@@ -83,7 +83,7 @@
   margin: auto;
   cursor: pointer;
   position: relative;
-  right: 50px;
+  right: 120px;
   top: 30px;
 }
 
@@ -110,7 +110,7 @@
   bottom: 170px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 740px) {
   .about-me {
     padding: 10px;
     border: 1px solid red;

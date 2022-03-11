@@ -6,7 +6,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
-  const [showSideBar, setShowSideBar] = useState(false);
+  const [showSideBar, setShowSideBar] = useState(!true);
 
   const toggle = () => {
     setShowSideBar(!showSideBar);
@@ -20,7 +20,7 @@ const Navbar = () => {
             <span> WANGDI TENZING</span>
           </Link>
         </div>
-        <div className="right-nav" onClick={toggle}>
+        <div className="right-nav">
           <ul className={!showSideBar ? "navLinks " : "mobile-Icon"}>
             <li className="header-link-wrapper">
               <Link
@@ -30,7 +30,6 @@ const Navbar = () => {
                 offset={50}
                 duration={300}
                 className="header-link"
-                onClick={toggle}
               >
                 {" "}
                 HOME
@@ -44,7 +43,6 @@ const Navbar = () => {
                 offset={50}
                 duration={300}
                 className="header-link"
-                onClick={toggle}
               >
                 {" "}
                 ABOUT{" "}
@@ -58,7 +56,6 @@ const Navbar = () => {
                 offset={50}
                 duration={300}
                 className="header-link"
-                onClick={toggle}
               >
                 {" "}
                 PROJECTS
@@ -72,7 +69,6 @@ const Navbar = () => {
                 offset={50}
                 duration={300}
                 className="header-link"
-                onClick={toggle}
               >
                 {" "}
                 CONTACT
