@@ -3,9 +3,15 @@ import { Link } from "react-scroll";
 import "./Navbar.css";
 import "../Contact/Contact";
 import Sidebar from "../Sidebar/Sidebar";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
-  const [showSideBar, setShowSideBar] = useState(false);
+  const [showSideBar, setShowSideBar] = useState(!true);
+
+  const toggle = () => {
+    setShowSideBar(!showSideBar);
+  };
+
   return (
     <div className="header">
       <div className="header-content">
@@ -15,7 +21,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="right-nav">
-          <ul className="navLinks">
+          <ul className={!showSideBar ? "navLinks " : "mobile-Icon"}>
             <li className="header-link-wrapper">
               <Link
                 to="about"
@@ -71,8 +77,8 @@ const Navbar = () => {
           </ul>
           {console.log(showSideBar)}
         </div>
-        <div className="mobile-Icon" onClick={() => setShowSideBar(true)}>
-          x{showSideBar ? <Sidebar /> : null}
+        <div className="mobile-Icon" onClick={toggle}>
+          <GiHamburgerMenu />
         </div>
       </div>
     </div>

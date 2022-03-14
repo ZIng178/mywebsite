@@ -1,20 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./sidebar.css";
-const Sidebar = () => {
-  return (
-    <div className="sidebar">
-      <div className="wrapper">
-        <div className="icons">
-          <Link to="about"> About </Link>
-          <Link to="about-me"> About Me </Link>
-          <Link to="projects"> Projects </Link>
-          <Link to="contacts"> Contacts </Link>
-        </div>
 
-        <div className="closeIcon">y</div>
+const Sidebar = ({ toggle }) => {
+  const [showSideBar, setShowSideBar] = useState(false);
+  return (
+    <>
+      <div className="sidebar" OnClick={toggle}>
+        <div className="wrapper">
+          <div className="icons">
+            <Link to="about" onClick={toggle}>
+              {" "}
+              About{" "}
+            </Link>
+            <Link to="about-me"> About Me </Link>
+            <Link to="projects"> Projects </Link>
+            <Link to="contacts"> Contacts </Link>
+          </div>
+
+          <div className="closeIcon" onClick={() => toggle()}>
+            {" "}
+            y{" "}
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
