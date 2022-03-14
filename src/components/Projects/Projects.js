@@ -4,6 +4,7 @@ import mythicimages from "../../images/mythicimage.png";
 import { Slide, Zoom } from "react-awesome-reveal";
 import kickskart from "../../images/kickskart.mp4";
 import mythicvideo from "../../images/mythicvideo.mp4";
+import paisavideo from "../../images/paisavideo.mp4";
 
 const Projects = () => {
   return (
@@ -80,7 +81,7 @@ const Projects = () => {
               <div className="projects-image">
                 <video className="video" loop autoPlay muted>
                   <source
-                    src={kickskart}
+                    src={paisavideo}
                     type="video/mp4"
                     width="300"
                     height="10px"
@@ -92,8 +93,7 @@ const Projects = () => {
                 <h3 className="projects-row-title"> PAISA</h3>
                 <p className="projects-row-desc">
                   {" "}
-                  Mythic is an E-Commerce Fashion Website built using React,
-                  Redux-Toolkit, Node, MongoDB, Express, HTML and CSS{" "}
+                  Paisa is a React App built using React Styled components
                 </p>
                 <div className="button-projects">
                   <button className="livebutton">See Live</button>
