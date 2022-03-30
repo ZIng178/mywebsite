@@ -5,7 +5,7 @@
     rgba(0, 150, 219, 0.8),
     rgba(0, 150, 219, 0.8)
   );
-  padding: 12rem 0;
+  padding: 7rem 0;
   display: block;
 }
 .main-container {
@@ -14,7 +14,7 @@
   width: 100%;
 }
 .heading-main {
-  margin-bottom: 11rem;
+  margin-bottom: 5rem;
 }
 
 .heading-sub {
@@ -26,6 +26,8 @@
   font-weight: 500;
   margin: auto;
   line-height: 1.6;
+  position: relative;
+  bottom: 18px;
 }
 .image-project {
   width: 100%;
@@ -69,8 +71,8 @@
 .projects-row-title {
   font-weight: 700;
   font-size: 2.8rem;
-  position: relative;
-  left: 180px;
+  align-items: center;
+  margin-left: 140px;
 }
 .projects-row-desc {
   font-size: 1.8rem;
@@ -99,6 +101,8 @@
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
   text-decoration: none;
+  position: relative;
+  left: 90px;
 }
 
 .sourcebutton {
@@ -114,12 +118,19 @@
   box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
   text-decoration: none;
   margin-left: 10px;
+  position: relative;
+  left: 90px;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .main-container {
+    width: 100%;
+    padding-right: 5px;
+  }
   .projects-content {
     display: flex;
     flex-direction: column;
+    padding: 3px;
   }
 
   .projects-row {
@@ -129,15 +140,17 @@
 
   .projects-image {
     width: 300px;
-  }
-
-  .projects-row-content h3 {
     position: relative;
-    left: 160px;
+    right: 15px;
+    top: 10px;
+  }
+  .projects-row-title {
+    position: relative;
+    right: 10px;
   }
 
   .button-projects {
     position: relative;
-    left: 50px;
+    right: 40px;
   }
 }

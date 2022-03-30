@@ -17,12 +17,12 @@ const AboutMe = () => {
         </div>
         <div className="about-content">
           <div className="about-content-main">
-            <h3 className="about-content-title"> Get to know me!</h3>
+            {/* <h3 className="about-content-title"> Get to know me!</h3> */}
 
             <div className="about-content-details">
               <p className="about-content-details-para">
-                I'm <strong> Full Stack Web Developer </strong>
-                that loves building the Front-end of Webistes and Web
+                I'm a <strong> Full Stack Web Developer </strong>
+                that loves building the Front-end of Websites and Web
                 Applications. Check out some of my work in the{" "}
                 <strong> Projects</strong> section.
               </p>
@@ -49,7 +49,7 @@ const AboutMe = () => {
             </Link>
           </div>
           <div className="about-content-skills">
-            <h3 className="about-content-title">My Skills</h3>
+            <h3 className="about-content-title-skills">My Skills</h3>
             <div className="skills">
               <div className="skill">HTML</div>
               <div className="skill">CSS</div>

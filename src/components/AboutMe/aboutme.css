@@ -44,37 +44,53 @@
 
 .about-content-main {
   display: flex;
-  flex-direction: column;
   position: relative;
-  bottom: 170px;
-  left: 50px;
 }
 
 .about-content-title {
   font-weight: 700;
   font-size: 2.8rem;
   margin-bottom: 3rem;
+  display: flex;
+  position: absolute;
+  bottom: 120%;
+  justify-content: center;
+  left: 35%;
+}
+
+.about-content-title-skills {
+  display: block;
+
+  font-size: 3.5rem;
+  text-transform: uppercase;
   position: relative;
-  right: 110px;
+  top: 22%;
+}
+
+.skills {
+  margin-top: 10px;
 }
 
 .about-content-details {
   display: flex;
   flex-direction: column;
+  line-height: 1.4;
+  position: relative;
+  bottom: 25%;
 }
 .about-content-details-para {
   font-size: 1.8rem;
   color: #666;
   max-width: 60rem;
-  line-height: 1.7;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 .contact-button {
   background: #0096db;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
-  display: inline-block;
+
   font-weight: 700;
   border-radius: 5px;
   padding: 1rem 3rem;
@@ -82,13 +98,14 @@
   text-decoration: none;
   margin: auto;
   cursor: pointer;
-  position: relative;
-  right: 120px;
-  top: 30px;
+  position: absolute;
+  top: 80%;
+  left: 40%;
 }
 
 .skills {
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   position: relative;
   top: 20px;
@@ -110,19 +127,32 @@
   bottom: 170px;
 }
 
-@media screen and (max-width: 740px) {
-  .about-me {
+@media screen and (max-width: 768px) {
+  .main-conatiner-about {
     padding: 10px;
-    border: 1px solid red;
   }
+
   .about-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+  }
+
+  .about-content-main {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    bottom: 180px;
+    left: 30px;
   }
 
   .about-content-details-para {
     text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .about-content-title-skills {
+    font-size: 3.5rem;
   }
 
   .about-content-main {
@@ -131,16 +161,12 @@
     margin-right: 70px;
   }
 
-  .about-content-title {
-    position: relative;
-    left: 3px;
-  }
-
   .contact-button {
     position: relative;
-    left: 5px;
+    left: 2px;
+    right: 10px;
   }
   .skills {
-    margin-left: 10px;
+    position: relative;
   }
 }

@@ -11,8 +11,8 @@ const About = () => {
       <div className="hero-info">
         <p>
           {" "}
-          A FullStack Web Developer with a focus on Frontend Development . I
-          love building the Frontend of Websites and Web Applications .
+          A FullStack Web Developer with a focus on Frontend Development. I love
+          building the Frontend of Websites and Web Applications .
         </p>
       </div>
       <div className="button-about">
