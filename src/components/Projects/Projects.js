@@ -24,6 +24,7 @@ const Projects = () => {
                   <source
                     src={mythicvideo}
                     type="video/mp4"
+                    alt="video"
                     width="300"
                     height="10px"
                   />
@@ -58,6 +59,7 @@ const Projects = () => {
                     src={kickskart}
                     type="video/mp4"
                     width="300"
+                    alt="video"
                     height="10px"
                   />
                 </video>
@@ -92,6 +94,7 @@ const Projects = () => {
                     src={paisavideo}
                     type="video/mp4"
                     width="300"
+                    alt="video"
                     height="10px"
                   />
                 </video>
@@ -122,6 +125,7 @@ const Projects = () => {
                       type="video/mp4"
                       width="300"
                       height="10px"
+                      alt="video"
                     />
                   </video>
                 </div>
