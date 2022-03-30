@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./Navbar.css";
 import "../Contact/Contact";
-import Sidebar from "../Sidebar/Sidebar";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {

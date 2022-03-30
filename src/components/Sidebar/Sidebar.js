@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-scroll";
 import "./sidebar.css";
 
 const Sidebar = ({ toggle }) => {
-  const [showSideBar, setShowSideBar] = useState(false);
   return (
     <>
       <div className="sidebar" OnClick={toggle}>

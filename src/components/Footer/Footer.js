@@ -16,10 +16,16 @@ const Footer = () => {
         <div className="footerRight">
           <h1> SOCIAL</h1>
           <a href="https://www.linkedin.com/in/wangdi-tenzing/">
-            <img src="https://img.icons8.com/fluency/48/000000/linkedin.png" />
+            <img
+              src="https://img.icons8.com/fluency/48/000000/linkedin.png"
+              alt="linkedinimage"
+            />
           </a>
           <a href="https://github.com/ZIng178">
-            <img src="https://img.icons8.com/material-rounded/48/000000/github.png" />
+            <img
+              src="https://img.icons8.com/material-rounded/48/000000/github.png"
+              alt="githubimage"
+            />
           </a>
         </div>
         <span className="copyright">
