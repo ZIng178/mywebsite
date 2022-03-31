@@ -55,7 +55,7 @@
   position: absolute;
   bottom: 120%;
   justify-content: center;
-  left: 35%;
+  left: 30%;
 }
 
 .about-content-title-skills {
@@ -64,7 +64,6 @@
   font-size: 3.5rem;
   text-transform: uppercase;
   position: relative;
-  top: 22%;
 }
 
 .skills {
@@ -100,7 +99,7 @@
   cursor: pointer;
   position: absolute;
   top: 80%;
-  left: 40%;
+  left: 30%;
 }
 
 .skills {
@@ -127,6 +126,25 @@
   bottom: 170px;
 }
 
+@media only screen and (min-width: 3024px) {
+  .main-container-about {
+    padding: 30px;
+  }
+  .about-content-title {
+    position: absolute;
+    left: 14%;
+  }
+
+  .about-content-details-para {
+    padding-left: 40px;
+  }
+
+  .contact-button {
+    position: absolute;
+    left: 15%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .main-conatiner-about {
     padding: 10px;
@@ -150,6 +168,11 @@
     text-align: center;
     margin-bottom: 2rem;
     margin-top: 2rem;
+  }
+
+  .about-content-title {
+    position: inherit;
+    left: 4%;
   }
   .about-content-title-skills {
     font-size: 3.5rem;

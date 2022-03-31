@@ -6,6 +6,7 @@ import kickskart from "../../images/kickskart.mp4";
 import mythicvideo from "../../images/mythicvideo.mp4";
 import paisavideo from "../../images/paisavideo.mp4";
 import trackexp from "../../images/trackexp.mp4";
+import watchflix from "../../images/watchflix.mp4";
 
 const Projects = () => {
   return (
@@ -43,9 +44,17 @@ const Projects = () => {
                   Interface.
                 </p>
                 <div className="button-projects">
-                  <button className="livebutton">See Live</button>
+                  <button className="livebutton">
+                    <a href="https://salty-chamber-29544.herokuapp.com/">
+                      {" "}
+                      See Live{" "}
+                    </a>
+                  </button>
+
                   {""}
-                  <button className="sourcebutton">Source Code</button>
+                  <button className="sourcebutton">
+                    <a href="https://github.com/ZIng178/test2">Source Code</a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -78,7 +87,11 @@ const Projects = () => {
                     <a href="https://kickskart.netlify.app/"> See Live </a>
                   </button>
 
-                  <button className="sourcebutton">Source Code</button>
+                  <button className="sourcebutton">
+                    <a href="https://github.com/ZIng178/mockcart">
+                      Source Code
+                    </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -103,15 +116,18 @@ const Projects = () => {
               <div className="projects-row-content">
                 <h3 className="projects-row-title"> PAISA</h3>
                 <p className="projects-row-desc">
-                  {" "}
                   Paisa mimics a landing page of a virtual banking system . This
                   projects focuses mostly on styling aspects of building React
                   Pages using React Styled Components
                 </p>
                 <div className="button-projects">
-                  <button className="livebutton">See Live</button>
-                  {""}
-                  <button className="sourcebutton">Source Code</button>
+                  <button className="livebutton">
+                    <a href="https://paisa.netlify.app/"> See Live </a>
+                  </button>
+
+                  <button className="sourcebutton">
+                    <a href="https://github.com/ZIng178/paisa">Source Code</a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -146,8 +162,46 @@ const Projects = () => {
                         See Live
                       </a>
                     </button>
-                    {""}
-                    <button className="sourcebutton">Source Code</button>
+
+                    <button className="sourcebutton">
+                      <a href="https://github.com/ZIng178/trackexp">
+                        Source Code
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="projects-content">
+                <div className="projects-row">
+                  <div className="projects-image">
+                    <video className="video" loop autoPlay muted>
+                      <source
+                        src={watchflix}
+                        type="video/mp4"
+                        width="300"
+                        height="10px"
+                        alt="video"
+                      />
+                    </video>
+                  </div>
+                  <div className="projects-row-content">
+                    <h3 className="projects-row-title"> WATCHFLIX</h3>
+                    <p className="projects-row-desc">
+                      {" "}
+                      WATCHFLIX is a simple app that gets data from a Public
+                      API.
+                    </p>
+                    <div className="button-projects">
+                      <button className="livebutton">
+                        <a href="https://watchflixx.herokuapp.com/">See Live</a>
+                      </button>
+                      {""}
+                      <button className="sourcebutton">
+                        <a href="https://github.com/ZIng178/Movie-app">
+                          Source Code
+                        </a>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>

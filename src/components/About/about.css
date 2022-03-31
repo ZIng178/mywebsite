@@ -112,6 +112,19 @@
     top: 27px;
   }
 }
+
+@media only screen and (min-width: 3024px) {
+  .heading-primary {
+    position: inherit;
+    bottom: 200px;
+  }
+
+  .hero-info p {
+    position: inherit;
+
+    margin-top: 30%;
+  }
+}
 @media screen and (max-width: 768px) {
   .socials {
     display: none;
