@@ -127,21 +127,21 @@
 }
 
 @media only screen and (min-width: 3024px) {
-  .main-container-about {
-    padding: 30px;
-  }
   .about-content-title {
-    position: absolute;
-    left: 14%;
+    position: relative;
+
+    bottom: 50%;
+    text-transform: uppercase;
   }
 
-  .about-content-details-para {
-    padding-left: 40px;
+  .about-content-main {
+    margin-bottom: 5%;
   }
 
   .contact-button {
     position: absolute;
-    left: 15%;
+
+    margin-top: 5%;
   }
 }
 
