@@ -17,9 +17,9 @@ const AboutMe = () => {
         </div>
         <div className="about-content">
           <div className="about-content-main">
-            {/* <h3 className="about-content-title"> Get to know me!</h3> */}
+            <h3 className="about-content-title"> Get to know me!</h3>
 
-            <div className="about-content-details">
+            <div className="c">
               <p className="about-content-details-para">
                 I'm a <strong> Full Stack Web Developer </strong>
                 that loves building the Front-end of Websites and Web
